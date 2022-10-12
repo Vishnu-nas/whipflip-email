@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Whipflip Email</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .outer {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        .offerproduct{
+            display: flex;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #efefef;
+            justify-content: center;
+        }
+        .acceptOffer_top .at_in .at_head span{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #1E558F;
+            mix-blend-mode: normal;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .acceptOffer_top .at_in .at_price{
+            display: inline-block;
+            margin: 15px 0 5px;
+        }
+        .acceptOffer_top .at_in .at_price h1{
+            margin: 0 0;
+            font-weight: bold;
+        }
+        .ofp_left{
+            flex: 0 0 40%;
+        }
+        .ofp_left .ofp_img{
+            padding-right: 30px;
+            text-align: center;
+        }
+        .ofp_left .ofp_img img{
+            width: 100%;
+        }
+        .ofp_right{
+            flex: 0 0 50%;
+        }
+        .at_tag span{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #8d8a8a;
+        }
+        .acceptOffer_top .at_in .at_price h1{
+            position: relative;
+        }
+        .acceptOffer_top .at_in .at_price h1::before{
+            content: "";
+            background: url(img/line.svg);
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 0;
+            background-position: left bottom;
+            bottom: 0;
+        }
+        .book_appmt{
+            color: #000;
+            background-color:  #FFD147;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 15px;
+         }
+         .warMsg span{
+            font-size: 12px;
+         }
+         .off_pro_hd{            
+            padding: 15px;
+            padding-top: 5px;
+         }
+         .content-area{
+            padding: 15px;
+            padding-top: 0;
+         }
+         .content-area p,.content-area ul li{
+            font-size: 14px;
+         }
+         .content-area p{
+            margin-top: 0;
+         }
+         .content-area ul{
+            padding-left: 15px;
+            margin-top: 10px;
+         }
+         .content-area ul li{
+            margin-bottom: 10px;
+         }
+         button{
+            cursor: pointer;
+         }
+         .book_app{
+            padding-bottom: 15px;
+            border-bottom: 1px solid #efefef;
+         }
+         .book_app h2{
+            font-size: 18px;
+            font-weight: 900;
+            margin-bottom: 5px;
+         }
+         .text-center{
+            text-align: center;
+         }
+         .click_url{
+            padding-top: 20px;
+         }
+         .click_url p{
+            margin-bottom: 0;
+         }
+         .click_url a{
+            color: #155698;
+            text-decoration: none;
+         }
+         .con_foo{
+            padding-top: 15px;
+            text-align: center;
+         }
+         .con_foo p{
+            margin-bottom: 0;
+         }
+         .cfi_icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding-top: 20px;
+         }
+         .outer_in{
+            padding: 15px;
+         }
+         .logo_link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+         a{
+            color: #155698;
+         }
+         .ll_right a{
+            color: #155698;
+            text-decoration: none;
+            font-size: 16px;
+         }
+         .ll_left {
+            width: 100px;
+            height: 70px;
+         }
+         .ll_left img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+         }
+         .footer{
+            padding-top: 10px;
+         }
+         .footer p{
+            margin: 5px;
+            font-size: 14px;
+            text-align: center;
+         }
+         .footer p a{
+            text-decoration: none;
+         }
+         .v_name{
+            font-size: 16px;
+            font-weight: 900;
+         }
+         @media(min-width:768px){
+           .show-desk{
+                display: block !important;
+           }
+           .show-mob{
+                display: none !important;
+           }
+         }
+         @media(max-width:768px){
+           .show-desk{
+                display: none !important;
+           }
+           .show-mob{
+                display: block !important;
+           }
+            .offerproduct{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .ofp_img{
+                width: 250px;
+                padding-right: 0;
+                margin: auto;
+            }
+            .ofp_img img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            .ofp_right{
+                text-align: center;
+            }
+            .ofp_mob_img{
+                padding: 20px 0;
+            }
+            .cfi_icons{
+                flex-wrap: wrap;
+            }
+            button{
+                font-size: 14px !important;
+            }
+         }
+         @media(max-width:474px){
+            .ofp_img{
+                width: 100%;
+            }
+         }
+    </style>
+</head>
+
+<body style="background-color: #F4F7FF;">
+    <div class="outer">
+        <div class="logo_link">
+            <div class="ll_left">
+                <img src="img/whipflip-logo.svg" alt="">
+            </div>
+            <div class="ll_right">
+                <span><a href="#">View in Browser</a></span>
+            </div>
+        </div>
+        <div class="outer_in" style="background-color: #fff;">
+            <div class="header">
+                <div class="off_pro_hd">
+                    <div class="offerproduct">
+                        <div class="ofp_left">
+                            <div class="ofp_img show-desk">
+                                <img src="img/car1.png" alt="">
+                                <span class="v_name">2022 Ford Ranger</span>
+                            </div>
+                        </div>
+                        <div class="ofp_right ofp_right_web">
+                            <div class="acceptOffer_top">
+                                <div class="at_in">
+                                  <div class="at_tag">
+                                    <span>WHIP#:40189</span>
+                                  </div>
+                                  <div class="at_head">
+                                    <span>Your <i>FLIPPIN’</i> Awesome Offer!</span>
+                                    <div class="at_img">
+                                      <img src="img/jd.svg" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="at_price">
+                                    <h1>$6,800 <span>*</span></h1>
+                                  </div>
+                                  <div class="warMsg">
+                                    <span>*This is only an estimation.Your final offer could be worth MORE or LESS</span>
+                                  </div>
+                                  <div class="ofp_img ofp_mob_img show-mob">
+                                    <img src="img/car1.png" alt="">
+                                    <span class="v_name">2022 Ford Ranger</span>
+                                </div>
+                                  <button class="book_appmt">Book Appointment to Sell</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="content-area">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    
+                <div class="book_app">
+                    <h2>Lorem Ipsum is simply dummy text </h2>
+                    <ul>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
+                    </ul>
+                    <div class="text-center">
+                        <button class="book_appmt">Book Appointment to Sell</button>
+                        <div class="click_url">
+                            <p>Or Click this link : <a href="#">https://whipflip.com/</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_foo">
+                    <div class="cfi">
+                        <p>Lorem Ipsum is simply dummy text of the printing </p>
+                        <p>standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="cfi_icons">
+                        <div class="cfi_icon">
+                            <img src="img/ggl.png" alt="">
+                        </div>
+                        <div class="cfi_icon">
+                            <img src="img/acct.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Lorem Ipsum is simply dummy text of the printing <a href="#">support@whipflip.com</a></p>
+            <p>standard dummy text ever since the 1500s <a href="#">Unsubscribe</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
